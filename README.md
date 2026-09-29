@@ -1,12 +1,18 @@
-# ft_recursive_power
+# Recursive integer power
 
-Welcome to the repository featuring the `ft_recursive_power` function, an elegant recursive implementation for calculating the power of a number. Unlike iterative approaches, this function demonstrates the power of recursion in solving problems that can be broken down into smaller, similar problems.
+**42 C fundamentals** · Computes a base raised to a non-negative exponent using a recursive base case.
 
-## Function Overview
+## Build and use
 
-The `ft_recursive_power` function calculates the result of raising a base number `nb` to an exponent `power`. It illustrates a classic example of recursion, where the function calls itself with a decremented power until it reaches a base case.
+```sh
+cc ft_recursive_power.c -o power
+./power
+```
 
-### Function Prototype
+The executable uses the example or prompts shown in the source.
 
-```c
-int ft_recursive_power(int nb, int power);
+## Implementation note
+
+The included main demonstrates 2³. Negative exponents return 0; int arithmetic can overflow.
+
+Source: [`ft_recursive_power.c`](ft_recursive_power.c). [License](LICENSE).
